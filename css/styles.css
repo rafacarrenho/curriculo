@@ -88,6 +88,10 @@ body {
   margin: 0;
 }
 
+#about-me .language {
+  margin-bottom: 32px;
+}
+
 #about-me .language p {
   color: white;
   margin: 0;
@@ -135,6 +139,7 @@ body {
 
 .skills h3 {
   font-size: 20px;
+  margin: 8px 0px;
 }
 
 .skills .item {
