@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+$primary-color: rgb(46, 58, 122);
+$secondary-color: blue;
+$text-secondary: #9c9c9c;
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.inner-container {
+  padding: 8px;
+}
+
+.container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  box-shadow: 0 0 6px -2px $primary-color;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+#about-me {
+  width: 280px;
+  background-color: $primary-color;
+
+  h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+  }
+
+  p {
+    color: $text-secondary;
+  }
+
+  h3.subtitle {
+    color: white;
+    font-size: 24px;
+    margin-top: 24px;
+  }
+
+  .avatar {
+    display: flex;
+    margin: 24px 0;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: url("/img/rafa.png");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 1px 0 3px 1px black;
+    border: 3px solid $primary-color;
+  }
+
+  .contact {
+    i {
+      color: white;
+      margin-right: 8px;
+    }
+
+    a {
+      color: $text-secondary;
+      text-decoration: none;
+      transition: 0.3s ease;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+
+  .location {
+    i {
+      color: white;
+      margin-right: 8px;
+    }
+
+    span {
+      color: white;
+    }
+  }
+
+  .formation {
+    h5 {
+      color: white;
+      font-size: 18px;
+      margin: 0;
+    }
+    p {
+      margin: 0;
+    }
+  }
+
+  .language {
+    p {
+      color: white;
+      margin: 0;
+
+      span {
+        color: $text-secondary;
+      }
+    }
+  }
+}
+
+#works-experiences {
+  padding: 32px;
+
+  h2 {
+    color: $primary-color;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .experiences {
+    margin-top: 40px;
+
+    h3 {
+      display: inline-block;
+      font-size: 18px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    span {
+      float: right;
+      color: $text-secondary;
+    }
+
+    h4 {
+      font-size: 16px;
+      color: $text-secondary;
+    }
+  }
+}
+
+.skills {
+  margin-top: 40px;
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .item {
+    display: grid;
+  }
+
+  .progress-bar {
+    background-color: $primary-color;
+  }
+}
+
+.projects {
+  margin-top: 40px;
+}
+
+.courses {
+  margin-top: 40px;
+
+  h5 {
+    margin: 0;
+    display: inline-block;
+  }
+
+  span {
+    float: right;
+    color: $text-secondary;
+  }
+
+  p {
+    color: $text-secondary;
+  }
+}
