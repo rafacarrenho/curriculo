@@ -3,6 +3,9 @@
 $primary-color: rgb(46, 58, 122);
 $secondary-color: blue;
 $text-secondary: #9c9c9c;
+$box-shadown: rgba(10, 22, 70, 0.1) 0px 1px 1px 0px,
+  rgba(10, 22, 70, 0.06) 0px 0px 1px 0px,
+  rgba(5, 15, 54, 0.16) 0px 28px 70px -7px;
 
 body {
   font-family: "Lato", sans-serif;
@@ -156,6 +159,44 @@ body {
 
 .projects {
   margin-top: 40px;
+
+  .projects-card {
+    .projects-card-inner {
+      display: inline-block;
+      border-radius: 20px;
+      margin-top: 40px;
+      transition: 0.3s ease;
+      overflow: hidden;
+      box-shadow: $box-shadown;
+
+      .photo {
+        height: 250px;
+        background-size: cover;
+        background-position: center top;
+        padding: -20px;
+      }
+
+      .projects-card-container {
+        padding: 20px 30px;
+
+        .btn-site {
+          background-color: $primary-color;
+          padding: 8px 16px;
+          border-radius: 32px;
+          color: white;
+          text-decoration: none;
+          border: 2px solid $primary-color;
+          font-weight: bold;
+          transition: 0.3s ease;
+
+          &:hover {
+            background-color: white;
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
 }
 
 .courses {
