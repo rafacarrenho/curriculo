@@ -121,6 +121,10 @@ body {
   .experiences {
     margin-top: 40px;
 
+    .card-header {
+      cursor: pointer;
+    }
+
     h3 {
       display: inline-block;
       font-size: 18px;

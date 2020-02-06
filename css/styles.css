@@ -116,6 +116,10 @@ body {
   margin-top: 40px;
 }
 
+#works-experiences .experiences .card-header {
+  cursor: pointer;
+}
+
 #works-experiences .experiences h3 {
   display: inline-block;
   font-size: 18px;
